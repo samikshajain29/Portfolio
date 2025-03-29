@@ -14,7 +14,3 @@ Welcome to my personal portfolio! 🚀 This project showcases my frontend develo
 - **JavaScript** – Interactivity and functionality  
 - **GSAP** – Animations and transitions  
 
-## 🚀 Installation & Setup  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/your-portfolio.git
