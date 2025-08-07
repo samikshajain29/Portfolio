@@ -8,7 +8,8 @@ This is a **personal portfolio website** built using **HTML**, **CSS**, **JavaSc
 - Smooth scroll and entrance animations using GSAP  
 - Responsive layout for mobile and desktop  
 - Interactive UI to engage visitors  
-- Easy-to-navigate structure for recruiters and clients  
+- Easy-to-navigate structure for recruiters and clients
+- Formspree for form submission  
 
 ## 🛠️ Tech Stack
 
