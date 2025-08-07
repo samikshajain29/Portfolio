@@ -161,12 +161,28 @@
       </div>
       <div class="right-contact">
         <div class="heading-contact">Contact ME</div>
-        <div class="form">
-          <input type="text" placeholder="Enter Your Name" />
-          <input type="email" placeholder="Email Address" />
-          <textarea rows="5" id="message" placeholder="Ask Anything"></textarea>
+        <form action="https://formspree.io/f/mdkdpgpn" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <textarea
+            rows="5"
+            id="message"
+            name="message"
+            placeholder="Ask Anything"
+            required
+          ></textarea>
           <button class="btn">Submit</button>
-        </div>
+        </form>
       </div>
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>

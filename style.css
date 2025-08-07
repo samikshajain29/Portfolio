@@ -286,7 +286,7 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
 }
-.form {
+form {
   width: 100%;
   height: 60%;
   display: flex;
@@ -294,7 +294,7 @@ main {
   justify-content: space-evenly;
   flex-direction: column;
 }
-.form input {
+form input {
   padding: 14px 35px;
   border-radius: 7px;
   background-color: rgb(44, 45, 45);
@@ -302,10 +302,10 @@ main {
   color: white;
   width: 70%;
 }
-.form input::placeholder {
+form input::placeholder {
   color: white;
 }
-.form textarea {
+form textarea {
   padding: 14px 35px;
   border-radius: 7px;
   background-color: rgb(44, 45, 45);
@@ -314,7 +314,7 @@ main {
   width: 70%;
   height: 20vh;
 }
-.form textarea::placeholder {
+form textarea::placeholder {
   color: white;
 }
 .heading-contact {
