@@ -1,1712 +1,1649 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Samiksha Jain Portfolio</title>
+    <title>Samiksha Jain | Full Stack Web Developer</title>
 
-    <!-- Meta Descriptions for SEO -->
+    <!-- Professional SEO Metadata -->
     <meta
       name="description"
-      content="Portfolio of Samiksha Jain, a Computer Science graduate and Full Stack MERN Developer. Specializing in React, Node, Express, MongoDB, and modern web experiences."
+      content="Samiksha Jain is a Full Stack Web Developer specializing in JavaScript, React, Node.js, Next.js, REST APIs, databases and modern web application development."
     />
     <meta
       name="keywords"
-      content="Samiksha Jain, Full Stack Developer, MERN Stack, Software Engineer, Portfolio, React Developer, Node.js"
+      content="Samiksha Jain, Full Stack Developer, MERN Stack Developer, Web Developer, React Developer, Node.js Developer, Next.js, JavaScript, Software Engineer"
     />
     <meta name="author" content="Samiksha Jain" />
+    <meta name="theme-color" content="#f8f9fc" />
 
-    <!-- Style sheets -->
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://samiksha-portfolio.vercel.app/" />
+    <meta property="og:title" content="Samiksha Jain | Full Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Computer Science graduate and Web Developer building responsive, scalable and production-ready web applications using modern web technologies."
+    />
+    <meta property="og:image" content="profile.png" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Samiksha Jain | Full Stack Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Computer Science graduate and Web Developer building responsive, scalable and production-ready web applications using modern web technologies."
+    />
+    <meta name="twitter:image" content="profile.png" />
+
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css" />
-
-    <!-- FontAwesome & Devicon Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    />
   </head>
   <body>
-    <!-- Custom Mouse Follower Nodes -->
-    <div id="custom-cursor"></div>
-    <div id="custom-cursor-dot"></div>
+    <!-- Sticky Glassmorphism Navbar -->
+    <header id="site-header" class="header-nav">
+      <div class="nav-container">
+        <a href="#hero" class="brand-logo" aria-label="Samiksha Jain Portfolio Home">
+          <span class="logo-bracket">&lt;</span><span class="logo-name">Samiksha</span><span class="logo-accent">.dev</span><span class="logo-bracket"> /&gt;</span>
+        </a>
 
-    <!-- Floating Navigation Bar -->
-    <header class="glass-panel">
-      <a href="#hero" class="logo">Samiksha<span></span></a>
-      <nav>
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li>
-            <a href="Samiksha_Jain_Resume.pdf" download class="nav-resume-btn"
-              ><i class="fas fa-download"></i> Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <!-- Theme Toggle Switcher -->
-        <button
-          id="theme-toggle"
-          class="theme-toggle magnetic"
-          aria-label="Toggle theme"
-        >
-          <i class="fas fa-sun"></i>
-          <i class="fas fa-moon"></i>
-        </button>
-        <!-- Magnetic Resume Action -->
-        <a
-          href="Samiksha_Jain_Resume.pdf"
-          download
-          class="btn-premium btn-secondary magnetic header-resume-btn"
-          >Resume</a
-        >
-        <!-- Magnetic Hire Me Action -->
-        <a href="#contact" class="btn-premium btn-primary magnetic">Hire Me</a>
-        <!-- Hamburger Menu Button -->
-        <button class="hamburger" id="ham-btn" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <!-- Desktop Navigation -->
+        <nav class="desktop-menu" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#hero" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Navbar CTAs -->
+        <div class="nav-actions">
+          <a
+            href="Samiksha_Jain_CV.pdf"
+            download="Samiksha_Jain_Resume.pdf"
+            class="btn btn-outline btn-sm nav-resume-btn"
+          >
+            <i class="fas fa-file-arrow-down"></i>
+            <span>Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-primary btn-sm nav-contact-btn">
+            Let's Connect
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button
+            id="mobile-menu-toggle"
+            class="hamburger-btn"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+        <div class="mobile-drawer-inner">
+          <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-item active"><i class="fas fa-house"></i> Home</a></li>
+            <li><a href="#about" class="mobile-nav-item"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#experience" class="mobile-nav-item"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#skills" class="mobile-nav-item"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-item"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <li><a href="#achievements" class="mobile-nav-item"><i class="fas fa-award"></i> Achievements</a></li>
+            <li><a href="#contact" class="mobile-nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+          </ul>
+          <div class="mobile-drawer-footer">
+            <div class="mobile-drawer-cta">
+              <a
+                href="Samiksha_Jain_CV.pdf"
+                download="Samiksha_Jain_Resume.pdf"
+                class="btn btn-outline btn-full"
+              >
+                <i class="fas fa-download"></i> Download Resume
+              </a>
+              <a href="#contact" class="btn btn-primary btn-full">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
-    <!-- 1. Hero Section -->
-    <section id="hero" class="section-padding">
-      <canvas id="particle-canvas"></canvas>
-      <div class="hero-background-gradient"></div>
-
-      <div class="hero-content">
-        <div class="hero-tag"><span></span>Open for Opportunities</div>
-        <h1 class="gradient-text">Hi, I'm Samiksha Jain</h1>
-
-        <div class="hero-typing-container">
-          I'm a <span id="typing-role"></span>
+    <main>
+      <!-- ==========================================
+           1. HERO SECTION
+           ========================================== -->
+      <section id="hero" class="hero-section">
+        <div class="hero-bg-elements" aria-hidden="true">
+          <div class="hero-glow-orb hero-glow-1"></div>
+          <div class="hero-glow-orb hero-glow-2"></div>
+          <div class="hero-grid-pattern"></div>
         </div>
 
-        <p class="hero-desc">
-          Computer Science graduate specialized in engineering robust,
-          high-performance web applications. Bringing complex design concepts to
-          life with clean, scalable full-stack code.
-        </p>
-
-        <div class="hero-actions-row">
-          <a href="#projects" class="btn-premium btn-primary magnetic"
-            >View Projects</a
-          >
-          <a
-            href="Samiksha_Jain_Resume.pdf"
-            download
-            class="btn-premium btn-secondary magnetic"
-          >
-            <i class="fas fa-download"></i> Download Resume
-          </a>
-        </div>
-      </div>
-
-      <!-- Recruiter Stats Dashboard -->
-      <div class="stats-grid">
-        <div class="stat-card glass-panel interactive-card">
-          <div class="stat-num" data-target="15">25+</div>
-          <div class="stat-label">Projects Built</div>
-        </div>
-        <div class="stat-card glass-panel interactive-card">
-          <div class="stat-num" data-target="500">500+</div>
-          <div class="stat-label">GitHub Commits</div>
-        </div>
-        <div class="stat-card glass-panel interactive-card">
-          <div class="stat-num" data-target="100">100+</div>
-          <div class="stat-label">LeetCode Solved</div>
-        </div>
-        <div class="stat-card glass-panel interactive-card">
-          <div class="stat-num" data-target="10">10+</div>
-          <div class="stat-label">Certifications</div>
-        </div>
-      </div>
-
-      <div class="scroll-indicator magnetic">
-        <div class="mouse-icon">
-          <div class="mouse-dot"></div>
-        </div>
-        <span>Explore Me</span>
-      </div>
-    </section>
-
-    <!-- Recruiter-friendly Open To Work Banner -->
-    <div class="open-to-work-banner glass-panel">
-      <div class="otw-badge"><i class="fas fa-briefcase"></i> Open to Work</div>
-      <p>
-        Actively seeking <strong>Full-Time Software Engineer Roles</strong> and
-        <strong>Web Development Internships</strong> starting
-        <strong>Summer 2026</strong>.
-      </p>
-      <a href="#contact" class="btn-premium btn-primary magnetic"
-        >Get in Touch</a
-      >
-    </div>
-
-    <!-- 2. About Me Section -->
-    <section id="about" class="section-padding">
-      <div class="about-container">
-        <!-- Photo wrapper with glowing outline frame -->
-        <div class="about-photo-wrapper">
-          <div class="about-photo-glow"></div>
-          <div class="about-photo-frame">
-            <img src="profile.png" alt="Samiksha Jain Profile" />
-          </div>
-          <div class="about-photo-tag glass-panel">
-            <i class="fas fa-code"></i>
-            <span>Full Stack Developer</span>
-          </div>
-        </div>
-
-        <!-- Description column -->
-        <div class="about-details-col">
-          <div class="about-heading">
-            <h2 class="gradient-text">About Me</h2>
-          </div>
-          <p class="about-text">
-            I am a results-oriented Computer Science graduate and Full Stack Web
-            Developer with hands-on experience in MERN Stack, Next.js, REST
-            APIs, authentication systems, real-time applications, and database
-            management. I specialize in engineering robust, high-performance web
-            applications with a focus on problem-solving, team collaboration,
-            and continuous learning. I love bringing complex design concepts to
-            life with clean, scalable full-stack code.
-          </p>
-
-          <!-- Education timeline -->
-          <div class="about-education">
-            <h3 class="about-subtitle">
-              <i class="fas fa-graduation-cap"></i> Education
-            </h3>
-            <div class="education-card glass-panel">
-              <div class="edu-header">
-                <span class="edu-title"
-                  >Bachelor of Technology in Computer Science Engineering</span
-                >
-                <span class="edu-date">2022 - 2026</span>
-              </div>
-              <p class="edu-inst">
-                Teerthanker Mahaveer University, Moradabad | CGPA: 9.5/10
-              </p>
-              <p class="edu-details">
-                Focus on Data Structures and Algorithms, Database Management
-                Systems, Web Technology, Software Engineering, and C++
-                programming.
-              </p>
+        <div class="hero-wrapper">
+          <div class="hero-content">
+            <!-- Recruiter Status Badge -->
+            <div class="status-badge">
+              <span class="pulse-dot"></span>
+              <span class="status-label">Open to Web Development Opportunities</span>
             </div>
-          </div>
 
-          <!-- Areas of Interest Cards -->
-          <div class="about-interests">
-            <h3 class="about-subtitle">
-              <i class="fas fa-heart"></i> Areas of Interest
-            </h3>
-            <div class="interests-grid">
-              <div class="interest-item glass-panel interactive-card">
-                <div class="interest-icon">
-                  <i class="fas fa-laptop-code"></i>
-                </div>
-                <span class="interest-name">Full Stack Development</span>
-              </div>
-              <div class="interest-item glass-panel interactive-card">
-                <div class="interest-icon"><i class="fas fa-globe"></i></div>
-                <span class="interest-name">Web Technologies</span>
-              </div>
-              <div class="interest-item glass-panel interactive-card">
-                <div class="interest-icon"><i class="fas fa-brain"></i></div>
-                <span class="interest-name">Cloud Computing & AI</span>
-              </div>
-              <div class="interest-item glass-panel interactive-card">
-                <div class="interest-icon"><i class="fas fa-cogs"></i></div>
-                <span class="interest-name">Problem Solving</span>
-              </div>
+            <h1 class="hero-name">
+              SAMIKSHA JAIN
+            </h1>
+
+            <!-- Professional Roles -->
+            <div class="hero-role-row">
+              <span class="role-pill primary-role">Full Stack Web Developer</span>
+              <span class="role-divider">•</span>
+              <span class="role-pill secondary-role">MERN Stack Developer</span>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Recruiter Feature: Why Hire Me? -->
-    <section id="why-hire" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Why Hire Me?</h2>
-        <p>
-          A structured breakdown of the skills, attributes, and value I bring to
-          engineering teams.
-        </p>
-      </div>
-
-      <div class="why-grid">
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon"><i class="fab fa-react"></i></div>
-          <h3>MERN Stack Development</h3>
-          <p>
-            Proficient in developing end-to-end applications utilizing MongoDB,
-            Express.js, React, Node.js, and Next.js, ensuring clean routing and
-            secure data flows.
-          </p>
-        </div>
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon"><i class="fas fa-lightbulb"></i></div>
-          <h3>Strong Problem Solving</h3>
-          <p>
-            Solved over 100+ algorithmic questions on LeetCode focusing on Data
-            Structures and Algorithms, optimizing complexity and runtime
-            performance.
-          </p>
-        </div>
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon">
-            <i class="fas fa-project-diagram"></i>
-          </div>
-          <h3>Project-Based Experience</h3>
-          <p>
-            Engineered scalable, live applications like E-Learning systems and
-            real-time poll rooms with production-ready best practices and solid
-            architectures.
-          </p>
-        </div>
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon"><i class="fas fa-bolt"></i></div>
-          <h3>Quick Learning Ability</h3>
-          <p>
-            Quickly master new frameworks, libraries, and tools like Next.js,
-            Redux Toolkit, Prisma, and WebSockets to solve real-world
-            engineering challenges.
-          </p>
-        </div>
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon"><i class="fas fa-users"></i></div>
-          <h3>Teamwork & Collaboration</h3>
-          <p>
-            Experienced in Git workflow, code reviews, and structured
-            documentation, aligning developer work with business goals and
-            collaborating in design sprints.
-          </p>
-        </div>
-        <div class="why-card glass-panel interactive-card">
-          <div class="why-card-icon"><i class="fas fa-code"></i></div>
-          <h3>Passion for Development</h3>
-          <p>
-            Dedicated to writing clean, maintainable code, building responsive
-            interfaces, and continuously learning new technologies to build
-            value.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. Technical Skills Section -->
-    <section id="skills" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Technical Skills</h2>
-        <p>
-          A comprehensive inventory of my technical competencies categorized by
-          layers.
-        </p>
-      </div>
-
-      <!-- Skills Tab Switcher -->
-      <div class="skills-tabs">
-        <button
-          class="skills-tab-btn active magnetic"
-          data-tab="frontend-skills"
-        >
-          Frontend
-        </button>
-        <button class="skills-tab-btn magnetic" data-tab="backend-skills">
-          Backend
-        </button>
-        <button class="skills-tab-btn magnetic" data-tab="database-skills">
-          Database
-        </button>
-        <button class="skills-tab-btn magnetic" data-tab="programming-skills">
-          Programming Languages
-        </button>
-        <button class="skills-tab-btn magnetic" data-tab="tools-skills">
-          Tools & Technologies
-        </button>
-      </div>
-
-      <!-- Skills Pane: Frontend -->
-      <div id="frontend-skills" class="skills-content-pane active">
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-react-original coloured"></i>
-          </div>
-          <h4>React.js</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-nextjs-plain coloured"></i>
-          </div>
-          <h4>Next.js</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-redux-original coloured"></i>
-          </div>
-          <h4>Redux Toolkit</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">85%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-tailwindcss-plain coloured"></i>
-          </div>
-          <h4>Tailwind CSS</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-html5-plain coloured"></i>
-          </div>
-          <h4>HTML5</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="95"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-css3-plain coloured"></i>
-          </div>
-          <h4>CSS3</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="95"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-mobile-alt"></i></div>
-          <h4>Responsive Design</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skills Pane: Backend -->
-      <div id="backend-skills" class="skills-content-pane">
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-nodejs-plain coloured"></i>
-          </div>
-          <h4>Node.js</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-express-original coloured"></i>
-          </div>
-          <h4>Express.js</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">85%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <h4>RESTful APIs</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-user-shield"></i></div>
-          <h4>JWT Authentication</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="fas fa-project-diagram"></i>
-          </div>
-          <h4>WebSockets</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-plug"></i></div>
-          <h4>API Integration</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skills Pane: Database -->
-      <div id="database-skills" class="skills-content-pane">
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-mongodb-plain coloured"></i>
-          </div>
-          <h4>MongoDB</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-mysql-plain coloured"></i>
-          </div>
-          <h4>MySQL</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-postgresql-plain coloured"></i>
-          </div>
-          <h4>PostgreSQL</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-database"></i></div>
-          <h4>Database Design</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">85%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="fas fa-tachometer-alt"></i>
-          </div>
-          <h4>Query Optimization</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skills Pane: Programming Languages -->
-      <div id="programming-skills" class="skills-content-pane">
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-javascript-plain coloured"></i>
-          </div>
-          <h4>JavaScript (ES6+)</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-typescript-plain coloured"></i>
-          </div>
-          <h4>TypeScript</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-cplusplus-plain coloured"></i>
-          </div>
-          <h4>C++</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">85%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-code"></i></div>
-          <h4>SQL</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Skills Pane: Tools -->
-      <div id="tools-skills" class="skills-content-pane">
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-git-plain coloured"></i>
-          </div>
-          <h4>Git</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-github-original coloured"></i>
-          </div>
-          <h4>GitHub</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-docker-plain coloured"></i>
-          </div>
-          <h4>Docker</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="75"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">75%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-postman-plain coloured"></i>
-          </div>
-          <h4>Postman</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-firebase-plain coloured"></i>
-          </div>
-          <h4>Firebase</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="85"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-vscode-plain coloured"></i>
-          </div>
-          <h4>VS Code</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="95"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">95%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon">
-            <i class="devicon-chrome-plain coloured"></i>
-          </div>
-          <h4>Chrome DevTools</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="90"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">90%</span>
-          </div>
-        </div>
-        <div class="skill-card glass-panel interactive-card">
-          <div class="skill-card-icon"><i class="fas fa-link"></i></div>
-          <h4>Prisma</h4>
-          <div class="skill-progress-container">
-            <svg class="skill-progress-svg">
-              <circle class="skill-progress-bg" cx="45" cy="45" r="40"></circle>
-              <circle
-                class="skill-progress-bar"
-                cx="45"
-                cy="45"
-                r="40"
-                data-percent="80"
-              ></circle>
-            </svg>
-            <span class="skill-progress-text">80%</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. Internship & Experience Section -->
-    <section id="experience" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Experience & Internships</h2>
-        <p>
-          A chronological summary of my industry engagement and practical
-          experience.
-        </p>
-      </div>
-
-      <div class="timeline">
-        <!-- Timeline Item 1 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel interactive-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role">Web Development Intern</h3>
-              <span class="timeline-date">Jun 2025 - Aug 2025</span>
-            </div>
-            <div class="timeline-company">
-              Glistara Software Solutions | Bhilai, India
-            </div>
-            <div class="timeline-desc">
-              <ul>
-                <li>
-                  Developed 5+ responsive web modules using React.js and MERN
-                  Stack, enhancing cross-platform user experience and
-                  application scalability.
-                </li>
-                <li>
-                  Integrated 10+ RESTful APIs and optimized performance through
-                  reusable components and efficient state management, reducing
-                  page load time by 25%.
-                </li>
-                <li>
-                  Maintained clean, scalable codebases and improved code
-                  maintainability using Git-based version control in
-                  collaborative settings.
-                </li>
-              </ul>
-            </div>
-            <div class="timeline-tech-stack">
-              <span class="timeline-tech-badge">HTML5</span>
-              <span class="timeline-tech-badge">CSS3</span>
-              <span class="timeline-tech-badge">JavaScript</span>
-              <span class="timeline-tech-badge">Tailwind CSS</span>
-              <span class="timeline-tech-badge">React.js</span>
-              <span class="timeline-tech-badge">Redux</span>
-              <span class="timeline-tech-badge">MongoDB</span>
-              <span class="timeline-tech-badge">Node.js</span>
-              <span class="timeline-tech-badge">Git</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Timeline Item 2 -->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card glass-panel interactive-card">
-            <div class="timeline-card-header">
-              <h3 class="timeline-role">Web Development Intern</h3>
-              <span class="timeline-date">Jun 2024 - Aug 2024</span>
-            </div>
-            <div class="timeline-company">Slash Mark IT StartUp | Remote</div>
-            <div class="timeline-desc">
-              <ul>
-                <li>
-                  Designed and developed 8+ responsive web pages and UI
-                  components using React.js, JavaScript, HTML5, and CSS3.
-                </li>
-                <li>
-                  Delivered highly interactive, cross-browser compatible, and
-                  accessible web experiences for diverse user form factors.
-                </li>
-                <li>
-                  Implemented RESTful API integrations and optimized frontend
-                  performance, reducing page rendering time by 20%.
-                </li>
-              </ul>
-            </div>
-            <div class="timeline-tech-stack">
-              <span class="timeline-tech-badge">React.js</span>
-              <span class="timeline-tech-badge">JavaScript</span>
-              <span class="timeline-tech-badge">HTML5</span>
-              <span class="timeline-tech-badge">CSS3</span>
-              <span class="timeline-tech-badge">REST APIs</span>
-              <span class="timeline-tech-badge">Git</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 5. Featured Projects Section -->
-    <section id="projects" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Featured Projects</h2>
-        <p>
-          Demonstrations of my ability to design, build, and deploy
-          production-ready full-stack applications.
-        </p>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <div class="project-card glass-panel">
-          <div class="project-image-wrapper">
-            <div class="project-image-overlay"></div>
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffffff;
-                font-size: 3rem;
-              "
-            >
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-          </div>
-          <div class="project-details">
-            <span class="project-tag">MERN Stack Application</span>
-            <h3 class="project-title">E-Learning Platform</h3>
-            <p class="project-desc">
-              Built a scalable e-learning platform (Online Learning Management
-              System) featuring secure user authentication, course management,
-              student enrollments, progress tracking, and personalized
-              dashboards.
+            <!-- Positioning Copy -->
+            <p class="hero-intro">
+              Computer Science graduate and Web Developer building responsive,
+              scalable and production-ready web applications using modern web technologies.
             </p>
-            <ul class="project-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Implemented JWT
-                Authentication and Google Sign-In for secure user registration,
-                login, and access management.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Integrated AI Voice
-                Assistant and AI Chat Support to help students search courses,
-                resolve doubts, and enhance their learning experience.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Built dedicated dashboards
-                for Students, Educators, and Admins, enabling course management,
-                educator approval workflows, student progress tracking, and
-                platform administration.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Integrated Razorpay payment
-                gateway for secure course purchases, along with assignment
-                management, certificate generation, and progress monitoring
-                features.
-              </li>
-            </ul>
-            <div class="project-tech">
-              <span class="project-tech-badge">MongoDB</span>
-              <span class="project-tech-badge">Express.js</span>
-              <span class="project-tech-badge">React.js</span>
-              <span class="project-tech-badge">Node.js</span>
-              <span class="project-tech-badge">Tailwind CSS</span>
-              <span class="project-tech-badge">Firebase</span>
-              <span class="project-tech-badge">JWT Auth</span>
-              <span class="project-tech-badge">REST APIs</span>
-            </div>
-            <div class="project-actions">
+
+            <!-- Strong CTAs -->
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-arrow-down"></i>
+                <span>View My Work</span>
+              </a>
               <a
-                href="https://e-learning-platform-frontend-dl4b.onrender.com/"
-                target="_blank"
-                class="btn-premium btn-primary magnetic"
-                ><i class="fas fa-external-link-alt"></i> Live Demo</a
+                href="Samiksha_Jain_CV.pdf"
+                download="Samiksha_Jain_Resume.pdf"
+                class="btn btn-outline"
               >
-              <a
-                href="https://github.com/samikshajain29/E-learning-platform"
-                target="_blank"
-                class="btn-premium btn-secondary magnetic"
-                ><i class="fab fa-github"></i> Source</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card glass-panel">
-          <div class="project-image-wrapper">
-            <div class="project-image-overlay"></div>
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffffff;
-                font-size: 3rem;
-              "
-            >
-              <i class="fas fa-poll"></i>
-            </div>
-          </div>
-          <div class="project-details">
-            <span class="project-tag">Real-Time Web Platform</span>
-            <h3 class="project-title">Real-Time Poll Rooms</h3>
-            <p class="project-desc">
-              Built a real-time polling and voting platform supporting 100+
-              concurrent active connections. Allows users to create, distribute,
-              and participate in interactive polls with instant result sync.
-            </p>
-            <ul class="project-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Users can participate in
-                polls and view live vote updates instantly through real-time
-                synchronization.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Implemented session-based
-                validation to ensure that a user can vote only once per poll
-                session, preventing duplicate submissions.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Added IP tracking and
-                validation mechanisms to restrict multiple votes from the same
-                source, improving poll fairness and reliability.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Users can create and join
-                unique poll rooms, while hosts can monitor participation and
-                manage polls through an intuitive dashboard.
-              </li>
-            </ul>
-            <div class="project-tech">
-              <span class="project-tech-badge">Next.js</span>
-              <span class="project-tech-badge">Node.js</span>
-              <span class="project-tech-badge">MongoDB</span>
-              <span class="project-tech-badge">Mongoose</span>
-              <span class="project-tech-badge">WebSockets</span>
-              <span class="project-tech-badge">Vercel</span>
-            </div>
-            <div class="project-actions">
-              <a
-                href="https://real-time-poll-rooms-iota.vercel.app/"
-                target="_blank"
-                class="btn-premium btn-primary magnetic"
-                ><i class="fas fa-external-link-alt"></i> Live Demo</a
-              >
-              <a
-                href="https://github.com/samikshajain29/Real-Time-Poll-Rooms"
-                target="_blank"
-                class="btn-premium btn-secondary magnetic"
-                ><i class="fab fa-github"></i> Source</a
-              >
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-
-        <div class="project-card glass-panel">
-          <div class="project-image-wrapper">
-            <div class="project-image-overlay"></div>
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffffff;
-                font-size: 3rem;
-              "
-            >
-              <i class="fas fa-check-circle"></i>
-            </div>
-          </div>
-          <div class="project-details">
-            <span class="project-tag">MERN Stack Application</span>
-            <h3 class="project-title">TaskBridge</h3>
-            <p class="project-desc">
-              Built a full-stack team task management application designed to
-              simplify project collaboration. It enables users to create
-              projects, assign tasks, and track progress efficiently with
-              role-based access control.
-            </p>
-            <ul class="project-features">
-              <li>
-                <i class="fas fa-check-circle"></i> JWT secure token
-                authentication & access control
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Organized workflow for
-                better team collaboration.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Team members can work
-                together on projects, monitor progress, and manage
-                responsibilities from a centralized dashboard.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Interactive dashboard to
-                monitor project status, task completion, and overall
-                productivity with a user-friendly interface.
-              </li>
-            </ul>
-            <div class="project-tech">
-              <span class="project-tech-badge">MongoDB</span>
-              <span class="project-tech-badge">Express.js</span>
-              <span class="project-tech-badge">React.js</span>
-              <span class="project-tech-badge">Node.js</span>
-              <span class="project-tech-badge">Tailwind CSS</span>
-              <span class="project-tech-badge">JWT Auth</span>
-              <span class="project-tech-badge">REST APIs</span>
-            </div>
-            <div class="project-actions">
-              <a
-                href="https://taskbridge-frontend.onrender.com"
-                target="_blank"
-                class="btn-premium btn-primary magnetic"
-                ><i class="fas fa-external-link-alt"></i> Live Demo</a
-              >
-              <a
-                href="https://github.com/samikshajain29/TaskBridge"
-                target="_blank"
-                class="btn-premium btn-secondary magnetic"
-                ><i class="fab fa-github"></i> Source</a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- Project 4 -->
-        <div class="project-card glass-panel">
-          <div class="project-image-wrapper">
-            <div class="project-image-overlay"></div>
-            <div
-              style="
-                width: 100%;
-                height: 100%;
-                background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #ffffff;
-                font-size: 3rem;
-              "
-            >
-              <i class="fas fa-book"></i>
-            </div>
-          </div>
-          <div class="project-details">
-            <span class="project-tag">MERN Stack Application</span>
-            <h3 class="project-title">ExamNotes AI</h3>
-            <p class="project-desc">
-              Built an AI-powered notes generator that creates structured notes
-              with diagrams, charts, and exam questions for any topic. Features
-              Gemini API, Google authentication, Stripe-based credits, and PDF
-              export.
-            </p>
-            <ul class="project-features">
-              <li>
-                <i class="fas fa-check-circle"></i> Automatically generates
-                structured and concise study notes from user-provided content
-                for efficient exam preparation.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> AI-based doubt-solving
-                system that helps students understand concepts and get quick
-                answers to academic queries.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Organizes content into
-                easy-to-revise formats, helping students focus on important
-                topics and improve preparation efficiency.
-              </li>
-              <li>
-                <i class="fas fa-check-circle"></i> Clean, responsive design
-                that provides a seamless experience across desktop and mobile
-                devices.
-              </li>
-            </ul>
-            <div class="project-tech">
-              <span class="project-tech-badge">MongoDB</span>
-              <span class="project-tech-badge">Express.js</span>
-              <span class="project-tech-badge">React.js</span>
-              <span class="project-tech-badge">Node.js</span>
-              <span class="project-tech-badge">Tailwind CSS</span>
-              <span class="project-tech-badge">Firebase</span>
-              <span class="project-tech-badge">REST APIs</span>
-            </div>
-            <div class="project-actions">
-              <a
-                href="https://examnotesaiclient-zqxj.onrender.com/auth"
-                target="_blank"
-                class="btn-premium btn-primary magnetic"
-                ><i class="fas fa-external-link-alt"></i> Live Demo</a
-              >
-              <a
-                href="https://github.com/samikshajain29/ExamNotesAI"
-                target="_blank"
-                class="btn-premium btn-secondary magnetic"
-                ><i class="fab fa-github"></i> Source</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Coding Profiles Section -->
-    <section id="coding-profiles" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Coding Profiles</h2>
-        <p>
-          A verification dashboard of my continuous commitment to computer
-          science logic and problem solving.
-        </p>
-      </div>
-
-      <div class="profiles-grid">
-        <!-- GitHub Card -->
-        <div class="profile-card glass-panel interactive-card github">
-          <div class="profile-card-header">
-            <div class="profile-icon"><i class="fab fa-github"></i></div>
-            <span class="profile-badge">GitHub</span>
-          </div>
-          <h3>samikshajain29</h3>
-          <ul class="profile-stats">
-            <li><span>Contributions</span><span>500+ Commits</span></li>
-            <li><span>Repositories</span><span>25+ Projects</span></li>
-            <li><span>Active Streak</span><span>120+ Days</span></li>
-          </ul>
-          <a
-            href="https://github.com/samikshajain29"
-            target="_blank"
-            class="profile-link"
-          >
-            View Profile <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- LeetCode Card -->
-        <div class="profile-card glass-panel interactive-card leetcode">
-          <div class="profile-card-header">
-            <div class="profile-icon"><i class="fas fa-code"></i></div>
-            <span class="profile-badge">LeetCode</span>
-          </div>
-          <h3>samikshajain29</h3>
-          <ul class="profile-stats">
-            <li><span>Problems Solved</span><span>100+ Problems</span></li>
-            <li>
-              <span>Focused Skills</span><span>Data Structures & Alg.</span>
-            </li>
-            <li>
-              <span>Problem Categories</span><span>Array, String, List</span>
-            </li>
-          </ul>
-          <a
-            href="https://leetcode.com/u/samikshaj7371/"
-            target="_blank"
-            class="profile-link"
-          >
-            View Profile <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-
-        <!-- GeeksforGeeks Card -->
-        <div class="profile-card glass-panel interactive-card gfg">
-          <div class="profile-card-header">
-            <div class="profile-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <span class="profile-badge">GFG</span>
-          </div>
-          <h3>samikshajain29</h3>
-          <ul class="profile-stats">
-            <li><span>Overall Score</span><span>500+</span></li>
-            <li><span>Solved Questions</span><span>150+</span></li>
-            <li><span>Rank Position</span><span>Top 25%</span></li>
-          </ul>
-          <a
-            href="https://www.geeksforgeeks.org/profile/samiksha29"
-            target="_blank"
-            class="profile-link"
-          >
-            View Profile <i class="fas fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- 7. Achievements & Certifications -->
-    <section id="achievements" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Achievements & Certifications</h2>
-        <p>Proof of continuous professional education and contest successes.</p>
-      </div>
-
-      <div class="certifications-grid">
-        <div class="cert-card glass-panel interactive-card">
-          <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-          <h3>Elite NPTEL Certification in DBMS</h3>
-          <span class="cert-issuer">IIT Kharagpur</span>
-          <p class="cert-desc">
-            Elite certification validating core knowledge in Database Design,
-            Query Execution, and SQL Optimization models.
-          </p>
-        </div>
-        <div class="cert-card glass-panel interactive-card">
-          <div class="cert-icon"><i class="fas fa-medal"></i></div>
-          <h3>Spoken Tutorial Certifications</h3>
-          <span class="cert-issuer">IIT Bombay</span>
-          <p class="cert-desc">
-            Professional certifications in engineering tools and structures
-            including Git, HTML, Python, C, C++, core Java and SQL.
-          </p>
-        </div>
-        <div class="cert-card glass-panel interactive-card">
-          <div class="cert-icon"><i class="fas fa-award"></i></div>
-          <h3>Academic Excellence Standing</h3>
-          <span class="cert-issuer">Teerthanker Mahaveer University</span>
-          <p class="cert-desc">
-            Ranked among the Top 5 students in every semester during B.Tech,
-            maintaining a cumulative CGPA of 9.5/10 throughout.
-          </p>
-        </div>
-        <div class="cert-card glass-panel interactive-card">
-          <div class="cert-icon"><i class="fas fa-code"></i></div>
-          <h3>Data Structures & Algorithmic Problem Solving</h3>
-          <span class="cert-issuer">LeetCode & DSA Practice</span>
-          <p class="cert-desc">
-            Solved 100+ problems on LeetCode focusing on efficient data
-            structures design, sorting/searching paradigms, and graph
-            algorithms.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 8. Services Section -->
-    <section id="services" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Services</h2>
-        <p>
-          Engineering capabilities that I can provide for your development team
-          or project client.
-        </p>
-      </div>
-
-      <div class="services-grid">
-        <div class="service-card glass-panel interactive-card">
-          <div class="service-icon"><i class="fab fa-react"></i></div>
-          <h3>Frontend Development</h3>
-          <p class="service-desc">
-            Crafting pixel-perfect, accessible, and fast client-side
-            applications. Implementing smooth micro-interactions, complex GSAP
-            animations, and state persistence flows.
-          </p>
-        </div>
-        <div class="service-card glass-panel interactive-card">
-          <div class="service-icon"><i class="fas fa-server"></i></div>
-          <h3>Backend Development</h3>
-          <p class="service-desc">
-            Building robust, highly secure, and optimized RESTful APIs and
-            server architectures. Structuring modular controllers, middlewares,
-            and secure encryption operations.
-          </p>
-        </div>
-        <div class="service-card glass-panel interactive-card">
-          <div class="service-icon"><i class="fas fa-database"></i></div>
-          <h3>Full Stack Development</h3>
-          <p class="service-desc">
-            Constructing complete web applications from logic concepts to
-            deployment. Integrating relational/non-relational engines with
-            seamless client pipelines.
-          </p>
-        </div>
-        <div class="service-card glass-panel interactive-card">
-          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-          <h3>Responsive Web Design</h3>
-          <p class="service-desc">
-            Optimizing screen layouts to render flawlessly across massive
-            monitors, tablet viewports, and compact smartphone touchscreens.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. Contact Section -->
-    <section id="contact" class="section-padding">
-      <div class="section-header">
-        <h2 class="gradient-text">Get in Touch</h2>
-        <p>
-          Let's discuss how my technical expertise can translate into
-          high-performing solutions for your company.
-        </p>
-      </div>
-
-      <div class="contact-container">
-        <!-- Coordinates info panel -->
-        <div class="contact-info-panel">
-          <div class="contact-info-card glass-panel">
-            <h3>Contact Coordinates</h3>
-
-            <div class="contact-item">
-              <div class="contact-item-icon">
+                <i class="fas fa-download"></i>
+                <span>Download Resume</span>
+              </a>
+              <a href="#contact" class="btn btn-ghost">
                 <i class="fas fa-envelope"></i>
-              </div>
-              <div class="contact-item-details">
-                <h4>Email</h4>
-                <a href="mailto:samikshaj7371@gmail.com" class="magnetic"
-                  >samikshaj7371@gmail.com</a
-                >
-              </div>
+                <span>Contact Me</span>
+              </a>
             </div>
 
-            <div class="contact-item">
-              <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
-              <div class="contact-item-details">
-                <h4>Phone</h4>
-                <a href="tel:+917371079243" class="magnetic">+91-7371079243</a>
+            <!-- Social Coordinates -->
+            <div class="hero-social-row">
+              <span class="social-tag">Find me on:</span>
+              <a
+                href="https://github.com/samikshajain29"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="GitHub Profile"
+                title="GitHub: samikshajain29"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/samiksha-jain29/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn: samiksha-jain29"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:samikshaj7371@gmail.com"
+                class="social-link"
+                aria-label="Email Samiksha Jain"
+                title="Email: samikshaj7371@gmail.com"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://leetcode.com/u/samikshaj7371/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LeetCode Profile"
+                title="LeetCode: samikshaj7371"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Developer Technical Card (Classy Light IDE Theme) -->
+          <div class="hero-visual">
+            <div class="code-terminal glass-panel">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-filename"><i class="fas fa-file-code"></i> developer.profile.js</span>
+                <span class="terminal-tag">Full Stack</span>
+              </div>
+              <div class="terminal-code">
+                <pre><code><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+  <span class="tok-prop">name</span>: <span class="tok-str">'Samiksha Jain'</span>,
+  <span class="tok-prop">currentRole</span>: <span class="tok-str">'Web Developer'</span>,
+  <span class="tok-prop">company</span>: <span class="tok-str">'Super Information Technology Services'</span>,
+  <span class="tok-prop">skills</span>: [
+    <span class="tok-str">'React.js'</span>, <span class="tok-str">'Node.js'</span>,
+    <span class="tok-str">'Express.js'</span>, <span class="tok-str">'MongoDB'</span>,
+    <span class="tok-str">'Next.js'</span>, <span class="tok-str">'REST APIs'</span>
+  ],
+  <span class="tok-prop">education</span>: <span class="tok-str">'B.Tech CSE | CGPA 9.5/10'</span>,
+  <span class="tok-prop">openForWork</span>: <span class="tok-bool">true</span>,
+  <span class="tok-func">buildApp</span>() {
+    <span class="tok-kw">return</span> <span class="tok-str">'Production-ready, responsive & scalable'</span>;
+  }
+};</code></pre>
+              </div>
+              <div class="terminal-pills">
+                <span class="term-pill"><i class="fab fa-react"></i> React</span>
+                <span class="term-pill"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="term-pill"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="term-pill"><i class="fas fa-network-wired"></i> REST APIs</span>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="contact-item">
-              <div class="contact-item-icon">
-                <i class="fas fa-map-marker-alt"></i>
+        <!-- Quick Recruiter Metrics -->
+        <div class="hero-metrics">
+          <div class="metric-card glass-panel">
+            <div class="metric-icon"><i class="fas fa-laptop-code"></i></div>
+            <div class="metric-data">
+              <span class="metric-num">25+</span>
+              <span class="metric-label">Projects Built</span>
+            </div>
+          </div>
+          <div class="metric-card glass-panel">
+            <div class="metric-icon"><i class="fab fa-github"></i></div>
+            <div class="metric-data">
+              <span class="metric-num">500+</span>
+              <span class="metric-label">GitHub Commits</span>
+            </div>
+          </div>
+          <div class="metric-card glass-panel">
+            <div class="metric-icon"><i class="fas fa-terminal"></i></div>
+            <div class="metric-data">
+              <span class="metric-num">100+</span>
+              <span class="metric-label">LeetCode Problems</span>
+            </div>
+          </div>
+          <div class="metric-card glass-panel">
+            <div class="metric-icon"><i class="fas fa-award"></i></div>
+            <div class="metric-data">
+              <span class="metric-num">9.5 / 10</span>
+              <span class="metric-label">B.Tech CGPA (Top 5)</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           2. ABOUT SECTION
+           ========================================== -->
+      <section id="about" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-user"></i> Professional Summary</span>
+          <h2 class="section-heading">About Me</h2>
+          <p class="section-lead">
+            Computer Science graduate and Full Stack/Web Developer with hands-on experience in frontend development, backend development, REST APIs, authentication, databases and responsive web applications.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Profile Card -->
+          <div class="about-photo-col">
+            <div class="profile-frame glass-panel">
+              <div class="profile-img-wrap">
+                <img
+                  src="profile.png"
+                  alt="Samiksha Jain - Full Stack Web Developer"
+                  class="profile-img"
+                  loading="lazy"
+                />
               </div>
-              <div class="contact-item-details">
-                <h4>Location</h4>
-                <p>Arrah, Bihar</p>
+              <div class="profile-card-details">
+                <h3 class="profile-card-name">Samiksha Jain</h3>
+                <p class="profile-card-role">Web Developer | Full Stack</p>
+                <div class="profile-card-loc">
+                  <i class="fas fa-location-dot"></i> Arrah, Bihar, India
+                </div>
+                <div class="profile-card-status">
+                  <span class="status-indicator"></span> Actively interviewing for Full Stack roles
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Social link quick card -->
-          <div class="contact-socials-card glass-panel">
+          <!-- Narrative and Education -->
+          <div class="about-info-col">
+            <!-- Narrative Box -->
+            <div class="info-card glass-panel">
+              <h3 class="info-card-title">
+                Building practical, high-performance web applications with clean code.
+              </h3>
+              <p class="info-para">
+                I am a Computer Science graduate and Full Stack/Web Developer with practical, real-world
+                experience in the JavaScript ecosystem. My work focuses on constructing responsive, modular
+                client interfaces paired with secure, performant server-side architectures.
+              </p>
+              <p class="info-para">
+                Currently, I work as a Web Developer at <strong>Super Information Technology Services</strong>,
+                building database-driven web platforms, creating admin portals, and implementing robust RESTful APIs.
+                I maintain a strong focus on clean architecture, continuous learning, and scalable software design.
+              </p>
+
+              <!-- Technical Competencies List -->
+              <div class="strengths-grid">
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>End-to-End MERN Stack Architecture</span>
+                </div>
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>REST API Design & Integration</span>
+                </div>
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>JWT & Role-Based Authentication</span>
+                </div>
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Relational & NoSQL Database Design</span>
+                </div>
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Real-Time WebSockets Synchronization</span>
+                </div>
+                <div class="strength-item">
+                  <i class="fas fa-check-circle"></i>
+                  <span>Mobile-First Responsive Engineering</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Education Card -->
+            <div class="education-card glass-panel">
+              <div class="edu-top-row">
+                <div class="edu-icon-box">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="edu-meta">
+                  <span class="edu-subtitle">Education & Academic Excellence</span>
+                  <h4 class="edu-degree">Bachelor of Technology in Computer Science Engineering</h4>
+                  <p class="edu-inst">
+                    Teerthanker Mahaveer University <span class="bullet">•</span> 2022 – 2026
+                  </p>
+                </div>
+                <div class="edu-score-badge">
+                  <span class="score-label">CGPA</span>
+                  <span class="score-val">9.5 / 10</span>
+                </div>
+              </div>
+
+              <div class="edu-achievement-highlight">
+                <i class="fas fa-medal"></i>
+                <p>
+                  "Ranked among the Top 5 students in every semester, maintaining a CGPA of 9.5/10 throughout B.Tech."
+                </p>
+              </div>
+
+              <div class="edu-tags">
+                <span class="edu-tag">Data Structures & Algorithms</span>
+                <span class="edu-tag">Database Management Systems</span>
+                <span class="edu-tag">Web Development</span>
+                <span class="edu-tag">Software Engineering</span>
+                <span class="edu-tag">Object-Oriented Programming (C++)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           3. EXPERIENCE SECTION
+           ========================================== -->
+      <section id="experience" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-briefcase"></i> Work History</span>
+          <h2 class="section-heading">Professional Experience</h2>
+          <p class="section-lead">
+            Hands-on commercial web development experience delivering responsive, scalable, and business-focused applications.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <!-- CURRENT PROFESSIONAL EXPERIENCE -->
+          <div class="timeline-card-item current-job">
+            <div class="timeline-indicator">
+              <span class="timeline-node current-node">
+                <span class="node-pulse"></span>
+              </span>
+              <div class="timeline-stem"></div>
+            </div>
+
+            <div class="experience-card glass-panel current-card">
+              <div class="exp-header">
+                <div class="exp-title-col">
+                  <div class="current-badge">
+                    <span class="live-dot"></span> Current Position
+                  </div>
+                  <h3 class="exp-role">Web Developer</h3>
+                  <div class="exp-company-info">
+                    <span class="company-name"><i class="fas fa-building"></i> Super Information Technology Services</span>
+                    <span class="bullet">•</span>
+                    <span class="exp-period"><i class="far fa-calendar"></i> July 2026 – Present</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <p class="exp-summary">
+                  Working as a Web Developer on responsive, database-driven and business-focused
+                  web applications, contributing to frontend development, backend functionality,
+                  API integration, admin panels and production website improvements.
+                </p>
+              </div>
+
+              <div class="exp-technologies">
+                <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="tech-chip"><i class="fas fa-server"></i> Express.js</span>
+                <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="tech-chip"><i class="fas fa-network-wired"></i> REST APIs</span>
+                <span class="tech-chip"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                <span class="tech-chip"><i class="fab fa-js"></i> JavaScript ES6+</span>
+                <span class="tech-chip"><i class="fab fa-git-alt"></i> Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREVIOUS EXPERIENCE 1 -->
+          <div class="timeline-card-item">
+            <div class="timeline-indicator">
+              <span class="timeline-node"></span>
+              <div class="timeline-stem"></div>
+            </div>
+
+            <div class="experience-card glass-panel">
+              <div class="exp-header">
+                <div class="exp-title-col">
+                  <h3 class="exp-role">Web Development Intern</h3>
+                  <div class="exp-company-info">
+                    <span class="company-name"><i class="fas fa-building"></i> Glistara Software Solutions</span>
+                    <span class="bullet">•</span>
+                    <span class="exp-period"><i class="far fa-calendar"></i> Jun 2025 – Aug 2025</span>
+                    <span class="bullet">•</span>
+                    <span class="exp-loc"><i class="fas fa-location-dot"></i> Bhilai, India</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <ul class="exp-list">
+                  <li>
+                    Developed 5+ responsive web modules using React.js and MERN Stack, enhancing cross-platform user experience and application scalability.
+                  </li>
+                  <li>
+                    Integrated 10+ RESTful APIs and optimized performance through reusable components and efficient state management, reducing page load time by 25%.
+                  </li>
+                  <li>
+                    Maintained clean, scalable codebases and improved code maintainability using Git-based version control in collaborative team workflows.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="exp-technologies">
+                <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                <span class="tech-chip"><i class="fas fa-code-branch"></i> Redux</span>
+                <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                <span class="tech-chip"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                <span class="tech-chip"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-chip"><i class="fab fa-git-alt"></i> Git</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- PREVIOUS EXPERIENCE 2 -->
+          <div class="timeline-card-item">
+            <div class="timeline-indicator">
+              <span class="timeline-node"></span>
+            </div>
+
+            <div class="experience-card glass-panel">
+              <div class="exp-header">
+                <div class="exp-title-col">
+                  <h3 class="exp-role">Web Development Intern</h3>
+                  <div class="exp-company-info">
+                    <span class="company-name"><i class="fas fa-building"></i> Slash Mark IT StartUp</span>
+                    <span class="bullet">•</span>
+                    <span class="exp-period"><i class="far fa-calendar"></i> Jun 2024 – Aug 2024</span>
+                    <span class="bullet">•</span>
+                    <span class="exp-loc"><i class="fas fa-laptop-house"></i> Remote</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="exp-body">
+                <ul class="exp-list">
+                  <li>
+                    Designed and developed 8+ responsive web pages and reusable UI components using React.js, JavaScript, HTML5, and CSS3.
+                  </li>
+                  <li>
+                    Delivered highly interactive, cross-browser compatible, and accessible web experiences for diverse user screen sizes.
+                  </li>
+                  <li>
+                    Implemented RESTful API integrations and optimized frontend performance, reducing page rendering time by 20%.
+                  </li>
+                </ul>
+              </div>
+
+              <div class="exp-technologies">
+                <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                <span class="tech-chip"><i class="fab fa-js"></i> JavaScript</span>
+                <span class="tech-chip"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-chip"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-chip"><i class="fas fa-network-wired"></i> REST APIs</span>
+                <span class="tech-chip"><i class="fab fa-git-alt"></i> Git</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4. SKILLS SECTION (WITH INTERACTIVE CATEGORY FILTER)
+           ========================================== -->
+      <section id="skills" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-code"></i> Technical Stack</span>
+          <h2 class="section-heading">Skills & Technologies</h2>
+          <p class="section-lead">
+            Categorized technical competencies representing hands-on full-stack development and engineering experience.
+          </p>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-filter-row">
+          <button class="skill-filter-btn active" data-filter="all">All Skills</button>
+          <button class="skill-filter-btn" data-filter="frontend">Frontend</button>
+          <button class="skill-filter-btn" data-filter="backend">Backend</button>
+          <button class="skill-filter-btn" data-filter="database">Databases</button>
+          <button class="skill-filter-btn" data-filter="programming">Languages</button>
+          <button class="skill-filter-btn" data-filter="tools">Tools</button>
+          <button class="skill-filter-btn" data-filter="integrations">Integrations</button>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- 1. Frontend -->
+          <div class="skill-group-card glass-panel" data-cat="frontend">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-desktop"></i></div>
+              <h3 class="group-title">Frontend Development</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fab fa-html5"></i> HTML5</span>
+              <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+              <span class="skill-tag"><i class="fab fa-js"></i> JavaScript ES6+</span>
+              <span class="skill-tag"><i class="fab fa-react"></i> React.js</span>
+              <span class="skill-tag"><i class="fas fa-layer-group"></i> Next.js</span>
+              <span class="skill-tag"><i class="fas fa-arrows-spin"></i> Redux Toolkit</span>
+              <span class="skill-tag"><i class="fab fa-css3"></i> Tailwind CSS</span>
+              <span class="skill-tag"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+              <span class="skill-tag"><i class="fas fa-mobile-screen"></i> Responsive Web Design</span>
+            </div>
+          </div>
+
+          <!-- 2. Backend -->
+          <div class="skill-group-card glass-panel" data-cat="backend">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-server"></i></div>
+              <h3 class="group-title">Backend Architecture</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+              <span class="skill-tag"><i class="fas fa-network-wired"></i> Express.js</span>
+              <span class="skill-tag"><i class="fas fa-plug"></i> REST APIs</span>
+              <span class="skill-tag"><i class="fas fa-key"></i> JWT</span>
+              <span class="skill-tag"><i class="fas fa-user-shield"></i> Authentication</span>
+              <span class="skill-tag"><i class="fas fa-bolt"></i> WebSockets</span>
+              <span class="skill-tag"><i class="fas fa-arrows-split-up-and-left"></i> Socket.IO</span>
+              <span class="skill-tag"><i class="fas fa-link"></i> API Integration</span>
+            </div>
+          </div>
+
+          <!-- 3. Database -->
+          <div class="skill-group-card glass-panel" data-cat="database">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-database"></i></div>
+              <h3 class="group-title">Databases & Modeling</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+              <span class="skill-tag"><i class="fas fa-cubes"></i> Mongoose</span>
+              <span class="skill-tag"><i class="fas fa-table"></i> MySQL</span>
+              <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
+              <span class="skill-tag"><i class="fas fa-terminal"></i> SQL</span>
+              <span class="skill-tag"><i class="fas fa-sitemap"></i> Database Design</span>
+            </div>
+          </div>
+
+          <!-- 4. Programming Languages -->
+          <div class="skill-group-card glass-panel" data-cat="programming">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-code"></i></div>
+              <h3 class="group-title">Programming Languages</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="skill-tag"><i class="fas fa-code"></i> TypeScript</span>
+              <span class="skill-tag"><i class="fas fa-microchip"></i> C++</span>
+              <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+            </div>
+          </div>
+
+          <!-- 5. Tools & Platforms -->
+          <div class="skill-group-card glass-panel" data-cat="tools">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-toolbox"></i></div>
+              <h3 class="group-title">Tools & Platforms</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+              <span class="skill-tag"><i class="fas fa-paper-plane"></i> Postman</span>
+              <span class="skill-tag"><i class="fab fa-docker"></i> Docker</span>
+              <span class="skill-tag"><i class="fas fa-fire"></i> Firebase</span>
+              <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+              <span class="skill-tag"><i class="fab fa-chrome"></i> Chrome DevTools</span>
+              <span class="skill-tag"><i class="fas fa-cloud"></i> Vercel</span>
+              <span class="skill-tag"><i class="fas fa-server"></i> Render</span>
+            </div>
+          </div>
+
+          <!-- 6. Integrations & APIs -->
+          <div class="skill-group-card glass-panel" data-cat="integrations">
+            <div class="group-header">
+              <div class="group-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <h3 class="group-title">Integrations & Services</h3>
+            </div>
+            <div class="chips-container">
+              <span class="skill-tag"><i class="fas fa-credit-card"></i> Razorpay</span>
+              <span class="skill-tag"><i class="fab fa-stripe"></i> Stripe</span>
+              <span class="skill-tag"><i class="fab fa-google"></i> Google Authentication</span>
+              <span class="skill-tag"><i class="fas fa-robot"></i> Gemini API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           5. PROJECTS SECTION
+           ========================================== -->
+      <section id="projects" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-folder-open"></i> Portfolio Work</span>
+          <h2 class="section-heading">Featured Projects</h2>
+          <p class="section-lead">
+            Production-ready web applications showcasing clean architecture, secure authentication, payment processing, and real-time communication.
+          </p>
+        </div>
+
+        <div class="projects-container">
+          <!-- FLAGSHIP PROJECT: E-LEARNING PLATFORM -->
+          <article class="project-showcase flagship-project glass-panel">
+            <div class="flagship-top-badge">
+              <i class="fas fa-star"></i> Flagship Project Showcase
+            </div>
+
+            <div class="flagship-grid">
+              <!-- Visual Mockup -->
+              <div class="project-mockup-wrapper">
+                <div class="browser-mockup">
+                  <div class="mockup-header">
+                    <div class="mockup-controls">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <div class="mockup-url">
+                      <i class="fas fa-lock"></i> https://e-learning-platform.onrender.com
+                    </div>
+                  </div>
+                  <div class="mockup-display elearning-display">
+                    <div class="mockup-navbar">
+                      <span class="mockup-brand"><i class="fas fa-graduation-cap"></i> EduSphere LMS</span>
+                      <span class="mockup-user-pill">Student / Educator / Admin</span>
+                    </div>
+                    <div class="mockup-hero">
+                      <span class="mockup-hero-badge"><i class="fas fa-robot"></i> AI Voice & Doubt Assistant</span>
+                      <h4>Comprehensive Online Learning Management</h4>
+                      <p>Razorpay payment checkout, certificate generation, and educator dashboards.</p>
+                      <div class="mockup-course-row">
+                        <div class="mockup-card">
+                          <span class="card-badge">Full Stack</span>
+                          <span class="card-title">MERN Web Dev</span>
+                          <span class="card-status">Razorpay Verified</span>
+                        </div>
+                        <div class="mockup-card">
+                          <span class="card-badge">AI EdTech</span>
+                          <span class="card-title">AI Voice Tutor</span>
+                          <span class="card-status">Real-time Support</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Information Details -->
+              <div class="project-details">
+                <div class="proj-badge-row">
+                  <span class="proj-category">MERN Stack | AI | EdTech</span>
+                  <span class="proj-live-indicator"><i class="fas fa-circle"></i> Live Deployment</span>
+                </div>
+
+                <h3 class="proj-title">E-Learning Platform</h3>
+                <p class="proj-description">
+                  A full-featured, scalable online learning management system engineered with the MERN stack.
+                  Includes distinct portals for students, educators, and administrators, automated completion
+                  certificates, secure payments, and interactive AI voice and doubt assistance.
+                </p>
+
+                <!-- Key Real Features -->
+                <div class="proj-features-list">
+                  <div class="feat-bullet">
+                    <i class="fas fa-check-circle"></i>
+                    <span><strong>Student, Educator & Admin Roles:</strong> Granular role-based access control with dedicated dashboards and educator approval workflows.</span>
+                  </div>
+                  <div class="feat-bullet">
+                    <i class="fas fa-check-circle"></i>
+                    <span><strong>Authentication:</strong> Secure JWT authentication complemented by Google Authentication for fast sign-in.</span>
+                  </div>
+                  <div class="feat-bullet">
+                    <i class="fas fa-check-circle"></i>
+                    <span><strong>AI-Powered Assistance:</strong> Integrated AI course search, AI voice assistant, and AI academic doubt/chat support.</span>
+                  </div>
+                  <div class="feat-bullet">
+                    <i class="fas fa-check-circle"></i>
+                    <span><strong>Course Operations:</strong> Razorpay payment gateway integration, student progress tracking, assignments, and certificates.</span>
+                  </div>
+                </div>
+
+                <!-- Technologies -->
+                <div class="proj-tech-chips">
+                  <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                  <span class="tech-chip"><i class="fas fa-server"></i> Express.js</span>
+                  <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                  <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="tech-chip"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                  <span class="tech-chip"><i class="fas fa-key"></i> JWT</span>
+                  <span class="tech-chip"><i class="fab fa-google"></i> Google Auth</span>
+                  <span class="tech-chip"><i class="fas fa-credit-card"></i> Razorpay</span>
+                  <span class="tech-chip"><i class="fas fa-robot"></i> AI APIs</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="proj-links">
+                  <a
+                    href="https://e-learning-platform-frontend-dl4b.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary"
+                  >
+                    <i class="fas fa-arrow-up-right-from-square"></i>
+                    <span>Live Demo</span>
+                  </a>
+                  <a
+                    href="https://github.com/samikshajain29/E-learning-platform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline"
+                  >
+                    <i class="fab fa-github"></i>
+                    <span>View GitHub</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SECONDARY PROJECTS GRID -->
+          <div class="projects-grid">
+            <!-- PROJECT 2: REAL-TIME POLL ROOMS -->
+            <article class="project-card glass-panel">
+              <div class="card-mockup">
+                <div class="mockup-header-sm">
+                  <div class="mockup-controls"><span></span><span></span><span></span></div>
+                  <span class="mockup-url-sm">real-time-poll-rooms.vercel.app</span>
+                </div>
+                <div class="mockup-inner poll-inner">
+                  <div class="poll-banner">
+                    <span><i class="fas fa-bolt"></i> WebSockets Live</span>
+                    <span class="poll-code">Room #4821</span>
+                  </div>
+                  <div class="poll-mock-bars">
+                    <div class="mock-bar">
+                      <div class="mock-bar-label"><span>Next.js</span> <span>68%</span></div>
+                      <div class="mock-bar-track"><div class="mock-bar-fill" style="width: 68%;"></div></div>
+                    </div>
+                    <div class="mock-bar">
+                      <div class="mock-bar-label"><span>Node & Sockets</span> <span>32%</span></div>
+                      <div class="mock-bar-track"><div class="mock-bar-fill" style="width: 32%;"></div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <span class="proj-category">Next.js | Real-Time Web Application</span>
+                <h3 class="card-title">Real-Time Poll Rooms</h3>
+                <p class="card-desc">
+                  An interactive polling and voting web application built to handle concurrent active users with live vote synchronization across all connected clients.
+                </p>
+
+                <div class="card-features">
+                  <div class="feat-line"><i class="fas fa-check"></i> Real-time voting with instant result synchronization</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> Session-based vote validation to prevent duplicate submissions</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> Custom poll rooms with host controls and concurrent user support</div>
+                </div>
+
+                <div class="proj-tech-chips">
+                  <span class="tech-chip"><i class="fas fa-layer-group"></i> Next.js</span>
+                  <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                  <span class="tech-chip"><i class="fas fa-cubes"></i> Mongoose</span>
+                  <span class="tech-chip"><i class="fas fa-bolt"></i> WebSockets</span>
+                  <span class="tech-chip"><i class="fas fa-cloud"></i> Vercel</span>
+                </div>
+
+                <div class="proj-links">
+                  <a
+                    href="https://real-time-poll-rooms-iota.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/samikshajain29/Real-Time-Poll-Rooms"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 3: EXAMNOTES AI -->
+            <article class="project-card glass-panel">
+              <div class="card-mockup">
+                <div class="mockup-header-sm">
+                  <div class="mockup-controls"><span></span><span></span><span></span></div>
+                  <span class="mockup-url-sm">examnotes-ai.onrender.com</span>
+                </div>
+                <div class="mockup-inner notes-inner">
+                  <div class="notes-mock-head">
+                    <span><i class="fas fa-brain"></i> Gemini API Notes</span>
+                    <span class="notes-pill">PDF Export</span>
+                  </div>
+                  <div class="notes-mock-lines">
+                    <div class="note-skeleton line-1"></div>
+                    <div class="note-skeleton line-2"></div>
+                    <div class="note-diagram-mock">
+                      <i class="fas fa-diagram-project"></i> Auto-Generated Diagrams & Revision Topics
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <span class="proj-category">AI-Powered MERN Application</span>
+                <h3 class="card-title">ExamNotes AI</h3>
+                <p class="card-desc">
+                  An AI-powered academic revision platform that transforms curriculum topics into structured notes, diagrams, charts, and exam questions with PDF export.
+                </p>
+
+                <div class="card-features">
+                  <div class="feat-line"><i class="fas fa-check"></i> AI-generated notes & topic-based revision with Gemini API</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> AI doubt solving, structured diagrams, charts & important questions</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> Google Authentication, PDF download, history & Stripe credit system</div>
+                </div>
+
+                <div class="proj-tech-chips">
+                  <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                  <span class="tech-chip"><i class="fas fa-server"></i> Express.js</span>
+                  <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                  <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="tech-chip"><i class="fas fa-robot"></i> Gemini API</span>
+                  <span class="tech-chip"><i class="fab fa-stripe"></i> Stripe</span>
+                  <span class="tech-chip"><i class="fab fa-google"></i> Google Auth</span>
+                </div>
+
+                <div class="proj-links">
+                  <a
+                    href="https://examnotesaiclient-zqxj.onrender.com/auth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/samikshajain29/ExamNotesAI"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJECT 4: TASKBRIDGE -->
+            <article class="project-card glass-panel">
+              <div class="card-mockup">
+                <div class="mockup-header-sm">
+                  <div class="mockup-controls"><span></span><span></span><span></span></div>
+                  <span class="mockup-url-sm">taskbridge.onrender.com</span>
+                </div>
+                <div class="mockup-inner task-inner">
+                  <div class="task-mock-head">
+                    <span><i class="fas fa-list-check"></i> TaskBridge Board</span>
+                    <span class="task-pill">JWT Protected</span>
+                  </div>
+                  <div class="task-mock-columns">
+                    <div class="task-col">
+                      <span class="task-col-title">To Do</span>
+                      <div class="task-mock-item">API Schema</div>
+                    </div>
+                    <div class="task-col">
+                      <span class="task-col-title">In Progress</span>
+                      <div class="task-mock-item active-item">Auth Flow</div>
+                    </div>
+                    <div class="task-col">
+                      <span class="task-col-title">Done</span>
+                      <div class="task-mock-item done-item">UI Design</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-content">
+                <span class="proj-category">MERN Stack | Team Collaboration</span>
+                <h3 class="card-title">TaskBridge</h3>
+                <p class="card-desc">
+                  A full-stack collaborative task management platform engineered to streamline project workflow, task assignments, and progress monitoring with role-based access.
+                </p>
+
+                <div class="card-features">
+                  <div class="feat-line"><i class="fas fa-check"></i> Project management workspace with structured task assignment</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> Granular role-based access control and secure JWT authentication</div>
+                  <div class="feat-line"><i class="fas fa-check"></i> Centralized productivity dashboard tracking task status and progress</div>
+                </div>
+
+                <div class="proj-tech-chips">
+                  <span class="tech-chip"><i class="fas fa-database"></i> MongoDB</span>
+                  <span class="tech-chip"><i class="fas fa-server"></i> Express.js</span>
+                  <span class="tech-chip"><i class="fab fa-react"></i> React.js</span>
+                  <span class="tech-chip"><i class="fab fa-node-js"></i> Node.js</span>
+                  <span class="tech-chip"><i class="fab fa-css3-alt"></i> Tailwind CSS</span>
+                  <span class="tech-chip"><i class="fas fa-key"></i> JWT Auth</span>
+                  <span class="tech-chip"><i class="fas fa-network-wired"></i> REST APIs</span>
+                </div>
+
+                <div class="proj-links">
+                  <a
+                    href="https://taskbridge-frontend.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <a
+                    href="https://github.com/samikshajain29/TaskBridge"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-outline btn-sm"
+                  >
+                    <i class="fab fa-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- View More on GitHub -->
+          <div class="projects-footer-cta">
+            <p>Interested in viewing more repositories, utility tools, and open-source contributions?</p>
             <a
-              href="https://www.linkedin.com/in/samiksha-jain29/"
+              href="https://github.com/samikshajain29?tab=repositories"
               target="_blank"
-              class="contact-social-link linkedin-btn magnetic"
-              aria-label="LinkedIn"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
             >
-              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-github"></i>
+              <span>View All Repositories on GitHub</span>
             </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           6. CODING / PROOF OF WORK SECTION
+           ========================================== -->
+      <section id="proof-of-work" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-chart-line"></i> Coding Profiles</span>
+          <h2 class="section-heading">Proof of Work</h2>
+          <p class="section-lead">
+            Demonstrated commitment to algorithmic problem solving, computer science fundamentals, and continuous code contributions.
+          </p>
+        </div>
+
+        <div class="pow-grid">
+          <!-- GitHub Card -->
+          <div class="pow-card glass-panel">
+            <div class="pow-card-head">
+              <div class="pow-platform-icon github-brand"><i class="fab fa-github"></i></div>
+              <div class="pow-platform-info">
+                <h3 class="pow-platform-name">GitHub</h3>
+                <span class="pow-username">@samikshajain29</span>
+              </div>
+              <a
+                href="https://github.com/samikshajain29"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pow-external-link"
+                aria-label="GitHub Profile Link"
+              >
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="pow-stats">
+              <div class="stat-row">
+                <span class="stat-name">Repositories</span>
+                <span class="stat-val">25+ Projects</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Total Commits</span>
+                <span class="stat-val">500+ Commits</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Core Languages</span>
+                <span class="stat-val">JavaScript, TypeScript, C++</span>
+              </div>
+            </div>
+
             <a
               href="https://github.com/samikshajain29"
               target="_blank"
-              class="contact-social-link github-btn magnetic"
-              aria-label="GitHub"
+              rel="noopener noreferrer"
+              class="pow-action-btn"
             >
-              <i class="fab fa-github"></i>
+              <span>Explore GitHub Profile</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
+          </div>
+
+          <!-- LeetCode Card -->
+          <div class="pow-card glass-panel">
+            <div class="pow-card-head">
+              <div class="pow-platform-icon leetcode-brand"><i class="fas fa-code"></i></div>
+              <div class="pow-platform-info">
+                <h3 class="pow-platform-name">LeetCode</h3>
+                <span class="pow-username">@samikshaj7371</span>
+              </div>
+              <a
+                href="https://leetcode.com/u/samikshaj7371/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pow-external-link"
+                aria-label="LeetCode Profile Link"
+              >
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="pow-stats">
+              <div class="stat-row">
+                <span class="stat-name">Problems Solved</span>
+                <span class="stat-val">100+ Problems</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Focus Areas</span>
+                <span class="stat-val">Data Structures & Alg.</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Key Topics</span>
+                <span class="stat-val">Arrays, Strings, LinkedList, Trees</span>
+              </div>
+            </div>
+
             <a
-              href="https://www.instagram.com/samiksha_jain.29/"
+              href="https://leetcode.com/u/samikshaj7371/"
               target="_blank"
-              class="contact-social-link instagram-btn magnetic"
-              aria-label="Instagram"
+              rel="noopener noreferrer"
+              class="pow-action-btn"
             >
-              <i class="fab fa-instagram"></i>
+              <span>View LeetCode Profile</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
+          </div>
+
+          <!-- GeeksforGeeks Card -->
+          <div class="pow-card glass-panel">
+            <div class="pow-card-head">
+              <div class="pow-platform-icon gfg-brand"><i class="fas fa-laptop-code"></i></div>
+              <div class="pow-platform-info">
+                <h3 class="pow-platform-name">GeeksforGeeks</h3>
+                <span class="pow-username">@samiksha29</span>
+              </div>
+              <a
+                href="https://www.geeksforgeeks.org/profile/samiksha29"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="pow-external-link"
+                aria-label="GeeksforGeeks Profile Link"
+              >
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
+            <div class="pow-stats">
+              <div class="stat-row">
+                <span class="stat-name">Solved Questions</span>
+                <span class="stat-val">150+ Questions</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Coding Score</span>
+                <span class="stat-val">500+ Score</span>
+              </div>
+              <div class="stat-row">
+                <span class="stat-name">Standing</span>
+                <span class="stat-val">Top 25% Rank</span>
+              </div>
+            </div>
+
             <a
-              href="https://www.facebook.com/profile.php?id=100035741015345"
+              href="https://www.geeksforgeeks.org/profile/samiksha29"
               target="_blank"
-              class="contact-social-link facebook-btn magnetic"
-              aria-label="Facebook"
+              rel="noopener noreferrer"
+              class="pow-action-btn"
             >
-              <i class="fab fa-facebook-f"></i>
+              <span>View GFG Profile</span>
+              <i class="fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
+      </section>
 
-        <!-- Validation Form Card -->
-        <div class="contact-form-card glass-panel">
-          <h3>Send a Message</h3>
-
-          <form
-            id="contact-form"
-            action="https://formspree.io/f/mdkdpgpn"
-            method="POST"
-            novalidate
-          >
-            <!-- Success Pop overlay -->
-            <div class="form-success-overlay">
-              <div class="success-icon"><i class="fas fa-check"></i></div>
-              <h3>Message Sent!</h3>
-              <p>
-                Thank you for reaching out. I'll get back to you within 24
-                hours.
-              </p>
-            </div>
-
-            <div class="form-group">
-              <input
-                type="text"
-                id="form-name"
-                name="name"
-                class="form-input"
-                placeholder=" "
-                required
-              />
-              <label for="form-name" class="form-label">Full Name</label>
-              <span class="form-error-msg"></span>
-            </div>
-
-            <div class="form-group">
-              <input
-                type="email"
-                id="form-email"
-                name="email"
-                class="form-input"
-                placeholder=" "
-                required
-              />
-              <label for="form-email" class="form-label">Email Address</label>
-              <span class="form-error-msg"></span>
-            </div>
-
-            <div class="form-group">
-              <textarea
-                id="form-message"
-                name="message"
-                class="form-input"
-                placeholder=" "
-                required
-              ></textarea>
-              <label for="form-message" class="form-label"
-                >Message Details</label
-              >
-              <span class="form-error-msg"></span>
-            </div>
-
-            <button type="submit" class="btn-premium btn-primary magnetic">
-              Submit Message <i class="fas fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- 11. Footer Section -->
-    <footer>
-      <div class="footer-top">
-        <div class="footer-brand">
-          <h3>Samiksha Jain<span></span></h3>
-          <p>
-            Computer Science graduate and Full Stack MERN Developer crafting
-            high-performance, modular web applications.
+      <!-- ==========================================
+           7. ACHIEVEMENTS & CERTIFICATIONS
+           ========================================== -->
+      <section id="achievements" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-award"></i> Honors & Credentials</span>
+          <h2 class="section-heading">Certifications & Achievements</h2>
+          <p class="section-lead">
+            Recognized academic excellence and certified computer science competencies from prestigious institutions.
           </p>
         </div>
-        <div class="footer-links">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4>Resources</h4>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#coding-profiles">Coding Profiles</a></li>
-            <li><a href="#contact">Contact Coordinates</a></li>
-            <li><a href="Samiksha_Jain_Resume.pdf" download>Resume PDF</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="footer-bottom">
-        <p>
-          &copy; 2026 Samiksha Jain. All rights reserved. Crafted with care and
-          passion.
-        </p>
-        <button class="scroll-top-btn magnetic" aria-label="Scroll to top">
-          <i class="fas fa-arrow-up"></i>
-        </button>
+        <div class="achievements-grid">
+          <!-- Item 1: NPTEL DBMS -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-box">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="cert-issuer">IIT Kharagpur & NPTEL</span>
+              <h3 class="cert-name">Elite NPTEL Certification in DBMS</h3>
+              <p class="cert-desc">
+                Certified in Database Management Systems covering relational database design, ER modeling, SQL normalization, query execution internals, and transaction management.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2: Spoken Tutorial -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-box">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="cert-issuer">IIT Bombay</span>
+              <h3 class="cert-name">Spoken Tutorial Certifications</h3>
+              <p class="cert-desc">
+                Earned professional course certifications in foundational engineering tools and technologies including Git, HTML, Python, C, C++, Core Java, and SQL.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3: Academic Excellence -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-box">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="cert-issuer">Teerthanker Mahaveer University</span>
+              <h3 class="cert-name">Academic Standing: Top 5 Rank</h3>
+              <p class="cert-desc">
+                Ranked among the Top 5 students in every semester, maintaining a cumulative CGPA of 9.5/10 throughout B.Tech in Computer Science Engineering.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4: DSA Milestone -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-box">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <div class="achievement-info">
+              <span class="cert-issuer">LeetCode & GeeksforGeeks</span>
+              <h3 class="cert-name">DSA Problem Solving Milestones</h3>
+              <p class="cert-desc">
+                Solved 250+ algorithmic challenges across competitive platforms, building strong foundations in recursion, searching, sorting, and graph optimization algorithms.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           8. SERVICES / EXPERTISE SECTION
+           ========================================== -->
+      <section id="services" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-cubes"></i> Core Expertise</span>
+          <h2 class="section-heading">What I Can Build</h2>
+          <p class="section-lead">
+            Specialized engineering capabilities delivering value across the modern web development lifecycle.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: Frontend Development -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fab fa-react"></i></div>
+            <h3 class="service-title">Frontend Development</h3>
+            <p class="service-desc">
+              Building responsive, accessible single-page applications with React.js, Next.js, and modern CSS. Structuring modular UI components, efficient state management, and smooth user interactions.
+            </p>
+            <div class="service-tags">
+              <span>React.js</span>
+              <span>Next.js</span>
+              <span>Redux Toolkit</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Backend Development -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fas fa-server"></i></div>
+            <h3 class="service-title">Backend Development</h3>
+            <p class="service-desc">
+              Developing secure, scalable RESTful APIs with Node.js and Express.js. Implementing JWT token authentication, route validation middlewares, and efficient business logic.
+            </p>
+            <div class="service-tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>REST APIs</span>
+              <span>JWT Authentication</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Full Stack Development -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+            <h3 class="service-title">Full Stack Development</h3>
+            <p class="service-desc">
+              Connecting database models to intuitive client interfaces using the MERN stack. Integrating third-party APIs, payment gateways (Razorpay, Stripe), and real-time WebSockets.
+            </p>
+            <div class="service-tags">
+              <span>MERN Stack</span>
+              <span>MongoDB</span>
+              <span>WebSockets</span>
+              <span>Payment Gateways</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Responsive Web Development -->
+          <div class="service-card glass-panel">
+            <div class="service-icon"><i class="fas fa-mobile-screen"></i></div>
+            <h3 class="service-title">Responsive Web Development</h3>
+            <p class="service-desc">
+              Engineering web layouts that render seamlessly across mobile devices, tablets, laptops, and wide monitors. Prioritizing fast load times, semantic HTML, and Core Web Vitals.
+            </p>
+            <div class="service-tags">
+              <span>Mobile-First</span>
+              <span>Cross-Browser</span>
+              <span>Performance</span>
+              <span>Accessibility</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           9. CONTACT SECTION
+           ========================================== -->
+      <section id="contact" class="section-block">
+        <div class="section-title-wrap">
+          <span class="section-badge"><i class="fas fa-envelope"></i> Contact Coordinates</span>
+          <h2 class="section-heading">Let's Build Something Great</h2>
+          <p class="section-lead">
+            I am actively seeking Full-Time Software Engineer, Full Stack Developer, MERN Stack Developer, and Web Developer roles. Feel free to reach out directly or send a message below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Coordinates -->
+          <div class="contact-info-panel">
+            <div class="coord-card glass-panel">
+              <h3 class="coord-card-title">Get in Touch Directly</h3>
+              <p class="coord-card-desc">
+                Whether you have an open opportunity or want to discuss a full-stack project, my inbox is open and I will respond promptly.
+              </p>
+
+              <div class="coord-list">
+                <a href="mailto:samikshaj7371@gmail.com" class="coord-item">
+                  <div class="coord-icon"><i class="fas fa-envelope"></i></div>
+                  <div class="coord-text">
+                    <span class="coord-label">Email Address</span>
+                    <span class="coord-value">samikshaj7371@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="tel:+917371079243" class="coord-item">
+                  <div class="coord-icon"><i class="fas fa-phone"></i></div>
+                  <div class="coord-text">
+                    <span class="coord-label">Phone Number</span>
+                    <span class="coord-value">+91-7371079243</span>
+                  </div>
+                </a>
+
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fas fa-location-dot"></i></div>
+                  <div class="coord-text">
+                    <span class="coord-label">Location</span>
+                    <span class="coord-value">Arrah, Bihar, India (Open to Remote & Relocation)</span>
+                  </div>
+                </div>
+
+                <div class="coord-item">
+                  <div class="coord-icon"><i class="fas fa-clock"></i></div>
+                  <div class="coord-text">
+                    <span class="coord-label">Availability</span>
+                    <span class="coord-value highlight-avail">Open for Full-Time Roles</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Buttons -->
+              <div class="coord-socials">
+                <a
+                  href="https://www.linkedin.com/in/samiksha-jain29/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn linkedin"
+                  aria-label="LinkedIn"
+                  title="LinkedIn: Samiksha Jain"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="https://github.com/samikshajain29"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn github"
+                  aria-label="GitHub"
+                  title="GitHub: samikshajain29"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="mailto:samikshaj7371@gmail.com"
+                  class="social-btn email"
+                  aria-label="Email Directly"
+                  title="Email: samikshaj7371@gmail.com"
+                >
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/samiksha_jain.29/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-btn instagram"
+                  aria-label="Instagram"
+                  title="Instagram: samiksha_jain.29"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Functional Formspree Form -->
+          <div class="contact-form-panel">
+            <div class="form-card glass-panel">
+              <h3 class="form-card-title">Send a Message</h3>
+              <p class="form-card-desc">
+                Fill in the details below, and I will get back to you within 24 hours.
+              </p>
+
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/mdkdpgpn"
+                method="POST"
+                novalidate
+              >
+                <!-- Success Message Overlay -->
+                <div id="form-success-msg" class="form-success-banner" aria-live="polite">
+                  <i class="fas fa-circle-check"></i>
+                  <div>
+                    <h4>Message Sent!</h4>
+                    <p>Thank you for reaching out. I'll get back to you shortly.</p>
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="form-name" class="field-label">Full Name <span class="required">*</span></label>
+                  <div class="field-input-box">
+                    <i class="fas fa-user field-icon"></i>
+                    <input
+                      type="text"
+                      id="form-name"
+                      name="name"
+                      class="field-input"
+                      placeholder="e.g. Sarah Jenkins"
+                      required
+                    />
+                  </div>
+                  <span class="field-error-msg"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="form-email" class="field-label">Email Address <span class="required">*</span></label>
+                  <div class="field-input-box">
+                    <i class="fas fa-envelope field-icon"></i>
+                    <input
+                      type="email"
+                      id="form-email"
+                      name="email"
+                      class="field-input"
+                      placeholder="e.g. sarah@company.com"
+                      required
+                    />
+                  </div>
+                  <span class="field-error-msg"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="form-subject" class="field-label">Subject / Role</label>
+                  <div class="field-input-box">
+                    <i class="fas fa-briefcase field-icon"></i>
+                    <input
+                      type="text"
+                      id="form-subject"
+                      name="subject"
+                      class="field-input"
+                      placeholder="e.g. Full Stack Developer Opportunity"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="form-message" class="field-label">Message <span class="required">*</span></label>
+                  <div class="field-input-box textarea-box">
+                    <i class="fas fa-comment-dots field-icon textarea-icon"></i>
+                    <textarea
+                      id="form-message"
+                      name="message"
+                      class="field-input field-textarea"
+                      placeholder="Tell me about the role, team, or project requirements..."
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <span class="field-error-msg"></span>
+                </div>
+
+                <button type="submit" id="form-submit-btn" class="btn btn-primary btn-full">
+                  <span>Let's Connect</span>
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========================================
+         10. FOOTER
+         ========================================== -->
+    <footer class="site-footer">
+      <div class="footer-wrapper">
+        <div class="footer-top-row">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">
+              <span class="logo-bracket">&lt;</span>Samiksha<span class="logo-accent">.dev</span><span class="logo-bracket"> /&gt;</span>
+            </a>
+            <p class="footer-summary">
+              Full Stack Web Developer crafting scalable, responsive and production-ready web applications using modern JavaScript technologies.
+            </p>
+            <div class="footer-social-icons">
+              <a
+                href="https://github.com/samikshajain29"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub Profile"
+                title="GitHub: samikshajain29"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/samiksha-jain29/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn Profile"
+                title="LinkedIn: samiksha-jain29"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="mailto:samikshaj7371@gmail.com"
+                aria-label="Email Samiksha Jain"
+                title="Email: samikshaj7371@gmail.com"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://leetcode.com/u/samikshaj7371/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LeetCode Profile"
+                title="LeetCode: samikshaj7371"
+              >
+                <i class="fas fa-code"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-nav-col">
+            <h4 class="footer-col-title">Credentials</h4>
+            <ul class="footer-links-list">
+              <li><a href="#proof-of-work">Proof of Work</a></li>
+              <li><a href="#achievements">Achievements</a></li>
+              <li><a href="#services">What I Can Build</a></li>
+              <li><a href="#contact">Contact Coordinates</a></li>
+              <li>
+                <a href="Samiksha_Jain_Resume.pdf" download="Samiksha_Jain_Resume.pdf">
+                  Download Resume (PDF)
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom-row">
+          <p class="copyright-notice">
+            &copy; 2026 Samiksha Jain. All rights reserved.
+          </p>
+          <div class="footer-meta-right">
+            <span class="tech-tagline">HTML5 • CSS3 • Vanilla JavaScript</span>
+            <button id="scroll-to-top-btn" class="back-to-top-btn" aria-label="Scroll back to top" title="Back to top">
+              <i class="fas fa-arrow-up"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
-    <!-- Premium Script CDNs (must load before local scripts) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
-    <!-- Local scripts (runs after all CDN scripts above have loaded) -->
+    <!-- Pure Vanilla JavaScript (NO animation libraries, NO frameworks) -->
     <script src="script.js"></script>
   </body>
 </html>
